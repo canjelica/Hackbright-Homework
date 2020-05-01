@@ -23,6 +23,12 @@ def get_customer_invoice_balance(path):
             print(f"Ref line {line_number}, {customer_name} paid ${total_paid}", f"expected ${expected_payment}.")
         
             #This compares amount owed to how much was paid and prints a summary of information from the function.
+        
+
+        if expected_payment != total_paid:
+            customer_status = "underpaid" if expected_price < amt_paid else "overpaid"
+
+    print(f"{first_name} has {payment_status} for their melons.")
     
     accounting_records.close()      #this closes file opened by the argument
 
