@@ -1,4 +1,10 @@
-def get_customer_invoice_balance(path):
+def get_customer_invoice_balance(path):    
+    """Show how much customers have paid and how much money is owed.
+
+    This function accesses accounting records and generates information showing 
+    customer name, how many melons they bought, how much money in $ they owe, 
+    and how much they have paid. 
+    """
     
     melon_cost = 1.00
     accounting_records = open(path)
