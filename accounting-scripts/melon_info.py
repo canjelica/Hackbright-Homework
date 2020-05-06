@@ -60,7 +60,7 @@ for melon in melons:
     # this is how I can dump the nested dictionary under melon
 print(melons_info)
 
-# return melons_info
+return melons_info
 
 
 
